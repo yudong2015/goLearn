@@ -9,21 +9,21 @@ func init() {
 }
 
 func main() {
-	// mapTest()
-	// forTest()
-	// switchTest()
+	// syntax.MapTest()
+	// syntax.ForTest()
+	// syntax.SwitchTest()
 
-	// sum := argsCount(1, 3, 5, 7, 9)
+	// sum := syntax.ArgsCount(1, 3, 5, 7, 9)
 	// fmt.Println("sum =", sum)
 
 	// a := 10
 	// fmt.Println("\n", a)
-	// argsTest(&a)
+	// syntax.ArgsTest(&a)
 	// fmt.Println(a)
 
 	// aStr := "test"
 	// fmt.Println("\n", aStr)
-	// argsTest2(&aStr)
+	// syntax.ArgsTest2(&aStr)
 	// fmt.Println(aStr)
 
 }
