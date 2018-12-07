@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/yudong2015/goLearn/web"
 )
 
 func init() {
@@ -21,9 +22,20 @@ func main() {
 	// syntax.ArgsTest(&a)
 	// fmt.Println(a)
 
-	// aStr := "test"
-	// fmt.Println("\n", aStr)
-	// syntax.ArgsTest2(&aStr)
-	// fmt.Println(aStr)
+	//aStr := "test"
+	//fmt.Println("\n", aStr)
+	//syntax.ArgsTest2(&aStr)
+	//fmt.Println(aStr)
+
+	//read.ReadDup()
+
+	//method.Test()
+
+	//interfaceL.Test()
+	//interfaceL.TestFunc()
+
+	//goroutine.Test()
+
+	web.Test()
 
 }
