@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/yudong2015/goLearn/web"
+
+	"github.com/yudong2015/goLearn/interfaceL"
 )
 
 func init() {
@@ -33,9 +34,10 @@ func main() {
 
 	//interfaceL.Test()
 	//interfaceL.TestFunc()
+	interfaceL.TestFunc2()
 
 	//goroutine.Test()
 
-	web.Test()
+	// web.Test()
 
 }
