@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	pb "github.com/yudong2015/goLearn/gRpc/helloworld"
+	pb "github.com/yudong2015/goLearn/gRpc/helloworld/helloworld"
 	"google.golang.org/grpc"
 )
 
