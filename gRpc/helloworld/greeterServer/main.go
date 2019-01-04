@@ -16,6 +16,10 @@ func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloRe
 	return &pb.HelloReply{Message: "Hello " + in.Name}, nil
 }
 
+func (s *server) SayHelloAgain(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
+	return &pb.HelloReply{Message: "Hello again " + in.Name}, nil
+}
+
 //server
 
 const (
@@ -25,7 +29,7 @@ const (
 func main() {
 	lis, err := net.Listen("tcp", port)
 	if err != nil {
-		log.Fatal("Failed to listen: %v", err)
+		log.Fatal("Failed to listen: ", err)
 	}
 	s := grpc.NewServer()
 	pb.RegisterGreeterServer(s, &server{})

@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/yudong2015/goLearn/interfaceL"
+	"time"
 )
 
 func init() {
@@ -34,10 +33,13 @@ func main() {
 
 	//interfaceL.Test()
 	//interfaceL.TestFunc()
-	interfaceL.TestFunc2()
+	// interfaceLearn.TestFunc2()
 
 	//goroutine.Test()
 
 	// web.Test()
+
+	go println("Goroutine test...")
+	time.Sleep(time.Millisecond)
 
 }
