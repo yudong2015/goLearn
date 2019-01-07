@@ -29,7 +29,7 @@ func main() {
 	}
 	log.Printf("Greeting Response: %s", response.Message)
 
-	responseAgain, err := c.SayHello(context.Background(), &pb.HelloRequest{Name: defaultName})
+	responseAgain, err := c.SayHelloAgain(context.Background(), &pb.HelloRequest{Name: defaultName})
 	if err != nil {
 		log.Fatalf("Could not greet: %v", err)
 	}

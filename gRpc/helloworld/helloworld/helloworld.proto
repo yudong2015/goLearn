@@ -12,4 +12,5 @@ message HelloReply{
 
 service Greeter {
     rpc SayHello (HelloRequest) returns (HelloReply) {}
+    rpc SayHelloAgain (HelloRequest) returns (HelloReply) {}
 }
