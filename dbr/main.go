@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 
 	"github.com/yudong2015/goLearn/random"
 
@@ -10,16 +9,7 @@ import (
 	"github.com/gocraft/dbr"
 )
 
-//Leasing for test
-type Leasing struct {
-	Id               string
-	ResouceId        string
-	ResouceVersionId string
-	UserId           string
-	CreateTime       time.Time
-	Status           string //updating / updated / overtime
-	Duration         int32
-}
+// CREATE TABLE IF NOT EXISTS leasing(leasing_id VARCHAR(50)NOT NULL, create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, status VARCHAR(50), PRIMARY KEY (leasing_id));
 
 func main() {
 	url := "root:123456@tcp(127.0.0.1:3306)/test"
@@ -31,7 +21,7 @@ func main() {
 
 	sess.Begin()
 
-	result, err := sess.InsertBySql("insert into leasing (test_id, status) value(?, ?)", random.RandString(), "running").Exec()
+	result, err := sess.InsertBySql("insert into leasing (leasing_id, status) value(?, ?)", random.RandString(), "running").Exec()
 	if err != nil {
 		fmt.Printf("failed to insert: %v", err)
 	}
