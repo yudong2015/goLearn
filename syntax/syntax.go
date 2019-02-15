@@ -121,3 +121,7 @@ func ArgsTest2(a *string) string {
 	*a = *a + "111"
 	return *a
 }
+
+type TestStruct struct {
+	name  string
+}

@@ -11,6 +11,7 @@ import (
 
 // CREATE TABLE IF NOT EXISTS leasing(leasing_id VARCHAR(50)NOT NULL, create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, status VARCHAR(50), PRIMARY KEY (leasing_id));
 
+
 func main() {
 	url := "root:123456@tcp(127.0.0.1:3306)/test"
 	conn, err := dbr.Open("mysql", url, nil)
