@@ -15,8 +15,6 @@ type User struct {
 	address string
 }
 
-func
-
 
 func Test(){
 	u := User{
