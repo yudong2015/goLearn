@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/yudong2015/goLearn/reflecttest"
 	"os"
 	"time"
 
@@ -44,6 +45,9 @@ func main() {
 
 	// web.Test()
 
+
+
+
 	fmt.Println("Test envs...")
 	fmt.Println(os.Getenv("PATH"))
 	//go println("Goroutine test...")
@@ -52,8 +56,6 @@ func main() {
 
 	var f4 float64 = 1.2345678
 	var f5 float64 = f4 * 100 /100
-
-
 	fmt.Println(f4)
 	fmt.Println(f5)
 	fmt.Printf("%.2f\n", f5)
@@ -61,4 +63,11 @@ func main() {
 	fmt.Printf("%.4f\n", f5)
 
 	fmt.Println(structs.Name(&s.TestStruct{}))
+
+
+
+
+	//reflect
+	//reflect
+	reflecttest.Test()
 }
